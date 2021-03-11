@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+  font-family: "Heebo", sans-serif;
+  list-style: none;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 0 3rem;
+  background: url(/img/bg.jpg) no-repeat center / cover;
+}
+main nav {
+  min-height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo h2 {
+  color: white;
+  font-family: "Lobster", cursive;
+  user-select: none;
+  letter-spacing: 0.3rem;
+}
+nav .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul li {
+  padding-left: 10rem;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.menu ul li:hover {
+  color: red;
+}
+.big-text {
+  text-align: center;
+  padding-top: 10rem;
+  color: #fff;
+}
+.big-text h3 {
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+}
+.big-text p {
+  letter-spacing: 0.4rem;
+}
+section {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .hide {
+  color: rgba(255, 255, 255, 0.77);
+  font-size: 3rem;
+  overflow: hidden;
+}
+section .text {
+  display: inline-block;
+  transform: translateY(100%);
+}
+.slider {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(84, 82, 82);
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+}
